@@ -1,9 +1,10 @@
+import './Post.css';
 
-export default function Post (id, title, body) {
+export default function Post (post) {
     return (
-      <div className="post" id={id}>
-        <h1>{title}</h1>
-        <div>{body}</div>
+      <div className="Post">
+        <h3>{post.title}</h3>
+        <p>{post.body}</p>
         <button>Read more</button>
       </div>
     )

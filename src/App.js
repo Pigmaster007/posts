@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import './App.css';
-import Post from './components/post/Post';
+import Post from './components/post/Post'
 
 function App() {
   const [data, setData] = useState(null);
@@ -35,16 +35,10 @@ function App() {
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}
-      <ul>
-        {data &&
-          data.posts.map(({ id, title, body}) => (
-            <li key={id}>
-              <h3>{title}</h3>
-              <p>{body}</p>
-            </li>
-            // Post(data.posts[0])
-          ))}
-      </ul>
+      <div id="mainField">
+        {data && Post(data.posts[0])}
+
+      </div>
  </div>
  );
 }

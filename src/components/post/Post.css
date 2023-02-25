@@ -1,0 +1,7 @@
+.Post {
+    width: 300px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #257f98cb;
+}
