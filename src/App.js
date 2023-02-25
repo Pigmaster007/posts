@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import './App.css';
+import Post from './components/post/Post';
 
 function App() {
   const [data, setData] = useState(null);
@@ -30,7 +31,6 @@ function App() {
 
  return (
  <div className="App">
-  <h1>API Posts</h1>
       {loading && <div>A moment please...</div>}
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
@@ -42,6 +42,7 @@ function App() {
               <h3>{title}</h3>
               <p>{body}</p>
             </li>
+            // Post(data.posts[0])
           ))}
       </ul>
  </div>
