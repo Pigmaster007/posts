@@ -1,11 +1,11 @@
 import './Post.css';
 
-export default function Post (post) {
+export default function Post (title, body) {
     return (
       <div className="Post">
-        <h3>{post.title}</h3>
-        <p>{post.body}</p>
-        <button>Read more</button>
+        <h3>{title}</h3>
+        <p>{body}</p>
+        <button className="readMore">Read more</button>
       </div>
     )
 };

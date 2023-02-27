@@ -15,8 +15,6 @@ code {
 #root {
   width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 button {
@@ -26,4 +24,15 @@ button {
   border-radius: 5px;
   padding: 5px;
   margin-bottom: 5px;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

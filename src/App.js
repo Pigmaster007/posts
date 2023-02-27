@@ -36,7 +36,14 @@ function App() {
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}
       <div id="mainField">
-        {data && Post(data.posts[0])}
+      <ul>
+        {data &&
+          data.posts.map(({ id, title, body}) => (
+            <li key={id}>
+              {Post(title, body)}
+            </li>
+          ))}
+      </ul>
 
       </div>
  </div>
