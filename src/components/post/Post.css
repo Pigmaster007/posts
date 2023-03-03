@@ -1,18 +1,23 @@
+
 .Post {
-    position: relative;
-    width: 300px;
-    height: 200px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #257f98cb;
+}
+
+.Post>p {
+    height: 70px;
     overflow: hidden;
-    text-align: center;
-    border: 3px solid white;
-    border-radius: 10px;
-    background-color: #257f98cb;
 }
 
 .readMore {
     position: absolute;
     bottom: 1px;
-    right: 5px;
+    right: 35%;
 }
 
 .readMore:hover {
@@ -23,3 +28,17 @@
 .readMore:active {
     transform: translateY(2px);
 }
+
+.PostClicked {
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    background-color: #257f98;
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 10px;
+  }
+  
+  .PostClicked>p {
+    height: auto;
+  }

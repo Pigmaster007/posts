@@ -40,7 +40,7 @@ function App() {
         {data &&
           data.posts.map(({ id, title, body}) => (
             <li key={id}>
-              {Post(title, body)}
+              {Post(title, body, id)}
             </li>
           ))}
       </ul>
