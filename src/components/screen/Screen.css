@@ -1,0 +1,8 @@
+#Screen {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000099;
+}

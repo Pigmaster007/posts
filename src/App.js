@@ -3,7 +3,7 @@ import './App.css';
 import Post from './components/post/Post'
 
 function App() {
-  const [data, setData] = useState(null);
+ const [data, setData] = useState(null);
  const [loading, setLoading] = useState(true);
  const [error, setError] = useState(null);
 
@@ -40,7 +40,7 @@ function App() {
         {data &&
           data.posts.map(({ id, title, body}) => (
             <li key={id}>
-              {Post(title, body, id)}
+              {Post(title, body)}
             </li>
           ))}
       </ul>

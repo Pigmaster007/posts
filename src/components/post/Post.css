@@ -12,11 +12,16 @@
 .Post>p {
     height: 70px;
     overflow: hidden;
+    margin: 5px;
+}
+
+.Post>h3 {
+  height: 49px;
+  overflow: hidden;
 }
 
 .readMore {
-    position: absolute;
-    bottom: 1px;
+    bottom: 2px;
     right: 35%;
 }
 
@@ -30,15 +35,18 @@
 }
 
 .PostClicked {
-    height: auto;
-    position: absolute;
-    z-index: 1;
-    background-color: #257f98;
-    width: 30%;
-    border: 3px solid white;
-    border-radius: 10px;
-  }
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  background-color: #257f98;
+  min-width: 195px;
+  width: 30%;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  margin: 0px;
+}
   
   .PostClicked>p {
     height: auto;
+    margin: 5px;
   }
