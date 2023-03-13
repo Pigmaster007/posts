@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import './App.css';
 import Post from './components/post/Post'
+import Screen from './components/screen/Screen';
 
 function App() {
  const [data, setData] = useState(null);
@@ -31,6 +32,7 @@ function App() {
 
  return (
  <div className="App">
+      <Screen />
       {loading && <div>A moment please...</div>}
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
